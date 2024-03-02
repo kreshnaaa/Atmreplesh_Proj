@@ -1,0 +1,75 @@
+create scripts for 2 tables (bank staging table and Repl staging details)
+
+
+Batch processing :
+
+1)Receive the file from the mail.
+2)read the file and store it in the desired path
+3)Use a Python service to handle the file upload process(schedule this service).
+4)To upload the file data to the database. This may involve creating a new table or inserting the data into an existing table, depending on your requirements.
+5)after uploading the file move to archive file
+
+
+
+Service:
+
+API to send bank and replenishment details (of old and new details) to the front end
+
+
+1)first i have to combine the bank details and replenishrequest details it comes from bankstaging,replenish staging tables
+    -->code implementation :  1)query to bank staging table
+                         2)query to replenishment staging table (where isSaved == N)
+                         3)combine two tables into json 
+                         4)send to frontend
+2)when the user clickon the save button then i need to save into original tables
+
+UI:
+
+1)dashboard call 
+-> new  & old order details( bank and Repl details)
+-> Display old orders and new orders in diff Section
+-> add save button for new orders on Repl details sections
+
+
+_______________________________________________________________________________________________________________________
+
+
+Manual Upload:
+
+UI:
+
+1) Upload and Create will have  2 saperate pages  
+2) upload page: option to select/provide the file path
+3) Call Load Order File API,send the path in the Api call 
+4) Display the Bank Details and Repl  Details returned by API call
+5) User will click on save Button to move the Staging to Order table  
+6) Display Success or Failed  Message if success dissable the save button
+
+
+Service:
+
+Load Order File:
+1)  call  python function  with the path provided
+2)  Pthon function will return staging table ID if everything is successfull else return code -1,-2,-3...,.(API       	to handel it)
+3)  Query to staging table with staging table iD & send bank details and Repl details 
+
+Save Order File:
+1) Service will  move the Staging to Order table
+2) Return Success or Failed  Message 
+
+
+Python:
+
+1) Read the file from the path provided.
+2) upload the data into the staging tables and set flag status 0
+  (1.Staging bank details 2.staging bank order details) one for headers and another for data in database.
+3) Return staging Table id if everything is successfull else return code -1,-2,-3...,.
+
+
+
+
+
+
+
+
+     

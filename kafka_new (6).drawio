@@ -1,0 +1,70 @@
+<mxfile host="app.diagrams.net" modified="2023-08-01T10:22:43.272Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="qmS5eeUNkA_APMUoaijC" version="21.6.6" type="device">
+  <diagram name="Page-1" id="Q4Ti1JabVtqRE08LjOuz">
+    <mxGraphModel dx="1120" dy="438" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="JT6IwjtypPP88ecZ5C6z-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="JT6IwjtypPP88ecZ5C6z-1" target="JT6IwjtypPP88ecZ5C6z-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JT6IwjtypPP88ecZ5C6z-1" value="kafka start" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="395" y="90" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="JT6IwjtypPP88ecZ5C6z-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="JT6IwjtypPP88ecZ5C6z-2" target="JT6IwjtypPP88ecZ5C6z-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JT6IwjtypPP88ecZ5C6z-2" value="Email srv:&lt;br&gt;&amp;nbsp;Read emails&amp;nbsp; and save the files in particular path" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="370" y="200" width="120" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="JT6IwjtypPP88ecZ5C6z-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="JT6IwjtypPP88ecZ5C6z-3" target="JT6IwjtypPP88ecZ5C6z-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JT6IwjtypPP88ecZ5C6z-3" value="Producer sends the message to topic:&lt;br&gt;atm-Repl" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="370" y="310" width="120" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="JT6IwjtypPP88ecZ5C6z-8" value="fail&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="540" y="545" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JT6IwjtypPP88ecZ5C6z-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="JT6IwjtypPP88ecZ5C6z-10" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="430.34782608695673" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JT6IwjtypPP88ecZ5C6z-10" value="load Srv&amp;nbsp;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&amp;nbsp;subscribe&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&amp;nbsp;the message in topic:atm-Repl and tell the load service" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="370" y="410" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="JT6IwjtypPP88ecZ5C6z-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="JT6IwjtypPP88ecZ5C6z-11" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="575.0869565217392" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JT6IwjtypPP88ecZ5C6z-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="JT6IwjtypPP88ecZ5C6z-11" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="430" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JT6IwjtypPP88ecZ5C6z-11" value="&lt;br&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;The load service &lt;br&gt;will handle the request&amp;nbsp; &amp;nbsp;&lt;br&gt;&lt;br&gt;&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="372.5" y="520" width="115" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="JT6IwjtypPP88ecZ5C6z-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="JT6IwjtypPP88ecZ5C6z-16" target="JT6IwjtypPP88ecZ5C6z-22" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JT6IwjtypPP88ecZ5C6z-16" value="Load Srv:&lt;br&gt;load service successfully loads the file into the database" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="372.5" y="660" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JT6IwjtypPP88ecZ5C6z-18" value="Plan 1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="395" y="18" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JT6IwjtypPP88ecZ5C6z-22" value=".NET will process messages from Kafka topics" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="372.5" y="750" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JT6IwjtypPP88ecZ5C6z-31" value="Yes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="430" y="618" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JT6IwjtypPP88ecZ5C6z-32" value="No" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="480" y="538" width="40" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
